@@ -1,0 +1,251 @@
+#inicio {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #efefef;
+    row-gap: 0;
+}
+
+#hero,
+#abonos,
+#complementos,
+#galeria,
+#cuenta_atras {
+    grid-column: 1 / -1;
+}
+
+#abonos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 90px 120px 50px;
+}
+
+.ticket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.ticket img {
+    width: 360px;
+    margin-bottom: 24px;
+}
+
+.ticket div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.precio {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.ticket button,
+.complemento_consignas button,
+.complemento_consignas a,
+.complemento_alojamiento button,
+.complemento_alojamiento a {
+    display: inline-block;
+    min-width: 210px;
+    padding: 10px 30px;
+    border: 3px solid #ff7748;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #ff7748;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.ticket button:hover {
+    background-color: #ff7748; 
+    color: #ffffff; 
+}
+
+.info_extra {
+    max-width: 340px;
+    margin-top: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+#complementos {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 40px 120px 70px;
+}
+
+#complementos h2 {
+    margin-bottom: 42px;
+    line-height: 0.88;
+}
+
+#complementos div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 150px;
+}
+
+.complemento_consignas,
+.complemento_alojamiento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 20px;
+    background: #ffffff;
+    border: 4px solid #ff7748;
+    border-radius: 44px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.664);
+    text-align: center;
+    width: 400px;
+}
+
+.complemento_consignas button:hover,
+.complemento_consignas a:hover,
+.complemento_alojamiento button:hover,
+.complemento_alojamiento a:hover {
+    background-color: #F69A49;
+    border-color: #F69A49;
+}
+
+.complemento_consignas img,
+.complemento_alojamiento img {
+    height: 180px;
+    width: auto;
+    margin-bottom: 25px;
+    object-fit: contain;
+}
+
+.complemento_consignas h3,
+.complemento_alojamiento h3 {
+    color: #ff7748;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 0.9;
+    line-height: 0.9;
+    margin-bottom: 12px;
+}
+
+.complemento_consignas .info_extra,
+.complemento_alojamiento .info_extra {
+    margin-top: 24px;
+}
+
+.precio_complemento {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.complemento_consignas button,
+.complemento_consignas a,
+.complemento_alojamiento button,
+.complemento_alojamiento a {
+    background: #ff7748;
+    color: #ffffff;
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 54px 120px;
+    background: #ff7748;
+    border-top: 3px solid #111111;
+    border-bottom: 3px solid #111111;
+}
+
+#galeria img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border: 2px solid #111111;
+    border-radius: 38px;
+    transition: all 0.4s ease;
+    filter: brightness(90%) contrast(95%);
+}
+
+#galeria img:hover {
+    transform: scale(1.05);
+    filter: brightness(110%) contrast(110%);
+}
+
+#cuenta_atras {
+    background: #56c3b7;
+    margin-left: calc(-50vw + 50%);
+    width: 100vw;
+    text-align: center;
+    border-bottom: 3px solid #111111;
+}
+
+#cuenta_atras_texto {
+    padding: 16px 0;
+    color: #ffffff;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+
+#hero .banner {
+    background-color: #ff7748;
+    width: 100vw;
+    margin-top: 80px;
+    margin-left: calc(-50vw + 50%);
+    overflow: hidden;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+    border-top: 3px solid #111111;
+    border-bottom: 3px solid #111111;
+    padding: 15px 0;
+    display: flex;
+}
+
+.track {
+    display: flex;
+    width: max-content;
+    color: #ffffff;
+    animation: mibanner 15s linear infinite;
+}
+
+.group {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.group span {
+    white-space: nowrap;
+    padding-right: 0.5rem;
+}
+
+@keyframes mibanner {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.banner:hover .track {
+  animation-play-state: paused;
+}

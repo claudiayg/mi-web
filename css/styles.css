@@ -1,0 +1,767 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+    color: #111111;
+    font-family: "Space Grotesk", sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: #111111;
+    text-decoration: none;
+}
+
+button {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+}
+
+#barra_superior {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding: 10px 0;
+    background: #ff7748;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    align-items: center;
+    padding: 40px 60px;
+    background: #EFEFEF;
+    width: 100%;
+    margin-top: 50px;
+}
+
+header a {
+    width: fit-content;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 52px;
+}
+
+#menu a {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+
+#boton_cartel,
+#boton_servicios,
+#boton_informacion {
+    color: #FF5F2A;
+    text-decoration: underline;
+}
+
+#menu a:hover {
+    color: #FF5F2A;
+    text-decoration: underline;
+}
+
+#menu_entradas {
+    padding: 14px 34px;
+    background: #ff7748;
+    color: #ffffff;
+    border-radius: 999px;
+}
+
+#menu #menu_entradas:hover {
+    background-color: #F69A49;
+    color: white;
+    transform: scale(1.08);
+    text-decoration: none;
+}
+
+#hero {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#cartel h1,
+#servicios h1,
+#informacion h1 {
+    margin: 110px auto 70px;
+    background: #ff7748;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150px;
+    line-height: 1;
+    text-shadow: -2px -2px 0 #111111, 2px -2px 0 #111111, -2px 2px 0 #111111, 2px 2px 0 #111111;
+}
+
+#artistas_confirmados h2,
+#encuesta_artistas h2,
+#faqs h2,
+#ubicacion h2,
+#contacto h2,
+#complementos h2,
+#alojamiento h2,
+#consignas h2 {
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#footer_colaboradores,
+#footer_info {
+    grid-column: 1 / -1;
+}
+
+#footer_colaboradores {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 42px 80px 48px;
+    border-bottom: 3px solid #111111;
+    margin-left: calc(-50vw + 50%);
+    width: 100vw;
+}
+
+.bloque_partners,
+.bloque_institucionales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+#footer_colaboradores h4 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    text-underline-offset: 0.12em;
+}
+
+.colaboradores {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.colaboradores img {
+    width: 220px;
+    height: 90px;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+
+#footer_info {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr 1fr;
+    gap: 30px;
+    padding: 44px 80px 20px;
+}
+
+.footer_col_1,
+.footer_col_2,
+.footer_col_3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_col_1 {
+    gap: 26px;
+}
+
+#footer_logo img {
+    width: 200px;
+}
+
+#footer_redes {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+#footer_redes i {
+    font-size: 25px;
+}
+
+#footer_idiomas {
+    display: flex;
+    gap: 30px;
+}
+
+#footer_idiomas h5,
+.footer_newsletter h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer_col_2 {
+    justify-content: flex-start;
+    padding-top: 34px;
+}
+
+.footer_newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer_col_3 {
+    align-items: flex-end;
+}
+
+#footer_politica {
+    grid-column: 1 / -1;
+    padding-top: 54px;
+    text-align: center;
+}
+
+#footer_politica p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.footer_newsletter button {
+    min-width: 210px;
+    padding: 10px 30px;
+    border: 3px solid #ff7748;
+    border-radius: 999px;
+    background: #ff7748;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.boton_subir {
+    position: fixed;
+    right: 26px;
+    bottom: 26px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #111111;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    z-index: 300;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease;
+}
+
+.boton_subir:hover {
+    transform: scale(1.08);
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+    body .boton_subir {
+        width: 46px;
+        height: 46px;
+        right: 16px;
+        bottom: 16px;
+        font-size: 24px;
+    }
+    body button {
+        font-size: 16px;
+    }
+
+    body #barra_superior {
+        position: static;
+        padding: 8px 12px;
+        font-size: 13px;
+        line-height: 1.25;
+    }
+
+    body header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 22px;
+        padding: 28px 20px 24px;
+        margin-top: 0;
+    }
+
+    body header > a img {
+        width: 170px;
+        margin: 0 auto;
+    }
+
+    body #menu {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 16px;
+    }
+
+    body #menu a {
+        font-size: 20px;
+    }
+
+    body #menu_entradas {
+        padding: 10px 22px;
+    }
+
+    body #inicio,
+    body #cartel,
+    body #informacion,
+    body #servicios {
+        grid-template-columns: 1fr;
+    }
+
+    body #hero {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    body #hero > img {
+        width: 92%;
+        max-width: 420px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    body #cartel h1,
+    body #servicios h1,
+    body #informacion h1 {
+        width: 90%;
+        margin: 60px auto 42px;
+        padding: 18px 0;
+        font-size: 58px;
+    }
+
+    body #artistas_confirmados h2,
+    body #encuesta_artistas h2,
+    body #faqs h2,
+    body #ubicacion h2,
+    body #contacto h2,
+    body #complementos h2,
+    body #alojamiento h2,
+    body #consignas h2 {
+        font-size: 38px;
+    }
+
+    body #abonos {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 46px;
+        padding: 52px 20px 34px;
+    }
+
+    body .ticket img {
+        width: 85%;
+        max-width: 280px;
+    }
+
+    body .precio {
+        font-size: 24px;
+    }
+
+    body .ticket button,
+    body .complemento_consignas button,
+    body .complemento_consignas a,
+    body .complemento_alojamiento button,
+    body .complemento_alojamiento a,
+    body .footer_newsletter button {
+        min-width: 0;
+        width: 100%;
+        max-width: 260px;
+    }
+
+    body .info_extra {
+        max-width: 300px;
+        font-size: 14px;
+    }
+
+    body #complementos {
+        padding: 36px 20px 48px;
+    }
+
+    body #complementos h2 {
+        margin-bottom: 30px;
+    }
+
+    body #complementos div {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 28px;
+    }
+
+    body .complemento_consignas,
+    body .complemento_alojamiento {
+        width: 100%;
+        max-width: 340px;
+        padding: 24px 18px;
+        border-radius: 28px;
+    }
+
+    body .complemento_consignas img,
+    body .complemento_alojamiento img {
+        height: 140px;
+    }
+
+    body .complemento_consignas h3,
+    body .complemento_alojamiento h3 {
+        font-size: 40px;
+    }
+
+    body #galeria {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        width: 100%;
+        margin-left: 0;
+        padding: 24px 14px;
+    }
+
+    body #galeria img {
+        width: 95%;
+        max-width: 430px;
+        height: 130px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+
+    body #cuenta_atras {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    body #cuenta_atras_texto {
+        padding: 14px 20px;
+        font-size: 20px;
+    }
+
+    body #hero .banner {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 34px;
+        padding: 12px 0;
+        font-size: 20px;
+    }
+
+    body #artistas_confirmados {
+        padding: 60px 20px;
+    }
+
+    body #artistas_confirmados h2 {
+        margin-bottom: 38px;
+    }
+
+    body #tarjetas_artistas {
+        grid-template-columns: 1fr;
+        max-width: 280px;
+        margin: 0 auto;
+        gap: 32px;
+    }
+
+    body #tarjetas_artistas article {
+        border-radius: 28px;
+    }
+
+    body #tarjetas_artistas .movil_rosa {
+        background: #ea96b4;
+    }
+
+    body #tarjetas_artistas .movil_verde {
+        background: #56c3b7;
+    }
+
+    body #tarjetas_artistas .movil_naranja {
+        background: #ff7748;
+    }
+
+    body #tarjetas_artistas article h3 {
+        font-size: 30px;
+    }
+
+    body #artistas_redes {
+        gap: 20px;
+    }
+
+    body #artistas_redes i {
+        font-size: 28px;
+    }
+
+    body #encuesta_artistas {
+        width: 100%;
+        margin-left: 0;
+        padding: 44px 20px;
+        background-size: 120px 120px, 120px 120px;
+    }
+
+    body #encuesta_artistas p {
+        width: auto;
+        max-width: 340px;
+        font-size: 14px;
+    }
+
+    body #encuesta_artistas button {
+        min-width: 0;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    body #alojamiento {
+        padding: 0 20px 56px;
+    }
+
+    body #alojamiento h2 {
+        margin-bottom: 38px;
+    }
+
+    body .zonas_alojamiento {
+        width: 100%;
+        max-width: 360px;
+        margin-bottom: 78px;
+        border-radius: 24px;
+        overflow: visible;
+    }
+
+    body .zonas_alojamiento h3 {
+        padding: 26px 16px;
+        font-size: 28px;
+        border-radius: 22px 22px 0 0;
+    }
+
+    body .zonas_alojamiento .descripcion {
+        width: auto;
+        padding: 0 18px;
+        font-size: 16px;
+    }
+
+    body .zona_playa img,
+    body .zona_glamping img {
+        position: absolute;
+        transform: none;
+        margin: 0;
+    }
+
+    body .zona_playa img {
+        width: 130px;
+        right: -90px;
+        bottom: -40px;
+        z-index: -1;
+    }
+
+    body .zona_glamping img {
+        width: 150px;
+        left: -80px;
+        bottom: -3px;
+        z-index: 5;
+    }
+
+    body #consignas {
+        padding: 54px 20px 64px;
+    }
+
+    body #consignas > p {
+        margin-bottom: 34px;
+        padding: 8px 22px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    body #consignas > img {
+        position: absolute;
+        top: 36px;
+        left: 66%;
+        width: 85px;
+        margin: 0;
+    }
+
+    body #consignas h5 {
+        margin-bottom: 32px;
+        font-size: 30px;
+    }
+
+    body #tamaños_consignas {
+        max-width: 340px;
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    body #tamaños_consignas article {
+        padding: 0 28px 30px;
+        border-radius: 28px;
+    }
+
+    body #tamaños_consignas article h5 {
+        margin: 0 -28px 28px;
+        font-size: 30px;
+    }
+
+    body #tamaños_consignas article h6 {
+        font-size: 34px;
+    }
+
+    body #tamaños_consignas article button {
+        width: 100%;
+    }
+
+    body #faqs,
+    body #ubicacion,
+    body #contacto {
+        padding: 46px 20px;
+    }
+
+    body #detalle_info_faqs {
+        margin-bottom: 34px;
+        text-align: center;
+    }
+
+    body #faqs_lista {
+        max-width: 100%;
+        gap: 16px;
+    }
+
+    body #faqs_lista summary {
+        padding: 12px 18px;
+        border-radius: 24px;
+        font-size: 18px;
+    }
+
+    body .faq_contenido {
+        padding: 18px;
+    }
+
+    body #ubicacion iframe {
+        height: 300px;
+    }
+
+    body #ubicacion p {
+        text-align: left;
+    }
+
+    body .form_contacto {
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    body .form_contacto input {
+        grid-column: 1;
+    }
+
+    body .form_contacto textarea,
+    body .form_contacto button {
+        grid-column: 1 / 3;
+    }
+
+    body .form_contacto textarea {
+        height: 260px;
+    }
+
+    body .form_contacto button {
+        width: 100%;
+        max-width: 260px;
+        padding: 10px 30px;
+    }
+
+    body #footer_colaboradores {
+        width: 100%;
+        margin-left: 0;
+        gap: 32px;
+        padding: 34px 20px 38px;
+    }
+
+    body .colaboradores {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px 22px;
+    }
+
+    body .colaboradores img {
+        width: 130px;
+        height: 60px;
+    }
+
+    body #footer_info {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 34px 22px 24px;
+        text-align: center;
+    }
+
+    body .footer_col_1,
+    body .footer_col_2,
+    body .footer_col_3 {
+        align-items: center;
+    }
+
+    body .footer_col_2 {
+        padding-top: 0;
+    }
+
+    body #footer_redes,
+    body #footer_idiomas {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    body #footer_redes {
+        gap: 22px;
+    }
+
+    body #footer_idiomas {
+        gap: 12px 18px;
+    }
+
+    body .footer_newsletter {
+        align-items: center;
+    }
+
+    body .footer_spotify {
+        width: 100%;
+    }
+
+    body #footer_politica {
+        padding-top: 20px;
+    }
+
+    body #footer_politica p {
+        font-size: 14px;
+    }
+}

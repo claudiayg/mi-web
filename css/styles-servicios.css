@@ -1,0 +1,246 @@
+#servicios {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 0;
+}
+
+#servicios h1,
+#alojamiento,
+#consignas {
+    grid-column: 1 / 13;
+}
+
+#servicios h1 {
+    width: 670px;
+    padding: 26px 0 26px 0;
+}
+
+#alojamiento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 80px;
+    border-bottom: 3px solid #111111;
+}
+
+#alojamiento h2 {
+    margin-bottom: 62px;
+    line-height: 0.95;
+}
+
+.zonas_alojamiento {
+    position: relative; 
+    width: 875px;
+    max-width: 90%;
+    margin-bottom: 70px;
+    padding: 0 0 38px 0;
+    border: 2px solid #111111;
+    border-radius: 28px;
+    background: #ffffff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.664);
+    text-align: center;
+}
+
+.zonas_alojamiento h3 {
+    width: 100%;
+    margin: 0 auto 30px;
+    padding: 34px 20px;
+    color: #ffffff;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 1;
+    text-shadow: -1px -1px 0 #111111, 1px -1px 0 #111111, -1px 1px 0 #111111, 1px 1px 0 #111111;
+    border-radius: 26px 26px 0 0; 
+}
+
+.zona_playa h3,
+.zona_playa button {
+    background: #ea96b4; 
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.zona_playa img {
+    position: absolute;
+    top: 66%;
+    right: -180px; 
+    transform: translateY(-50%);
+    width: 250px;
+    z-index: -1; 
+}
+
+.zona_glamping h3,
+.zona_glamping button {
+    background: #56c3b7; 
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.zona_glamping img {
+    position: absolute;
+    bottom: -5px; 
+    left: -150px; 
+    width: 350px;
+    z-index: 5; 
+}
+
+.zonas_alojamiento .descripcion {
+    width: 620px;
+    margin: 0 auto 28px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.zonas_alojamiento h4 {
+    margin-bottom: 18px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.zonas_alojamiento .info_extra {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.zonas_alojamiento button {
+    min-width: 220px;
+    margin-bottom: 22px;
+    padding: 10px 30px;
+    color: #ffffff;
+    border-radius: 999px;
+    border-bottom: none;
+    transition: all 0.3s ease;
+}
+
+.zonas_alojamiento button:hover {
+    transform: scale(1.05); 
+}
+
+#consignas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 90px 95px 100px;
+    border-bottom: 3px solid #111111;
+}
+
+#consignas h2 {
+    margin-bottom: 15px;
+    line-height: 0.95;
+}
+
+#consignas > p {
+    margin-bottom: 70px;
+    margin-top: 10px;
+    padding: 8px 34px;
+    background: #56c3b7;
+    border: 2px solid #111111;
+    color: #ffffff;
+    border-radius: 999px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1;
+}
+
+#consignas > img {
+    position: absolute;
+    top: 40px;
+    margin-left: 420px; 
+    width: 150px;
+}
+
+#consignas h5 {
+    margin-bottom: 48px;
+    text-align: center;
+    color: #ff7748;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 1;
+}
+
+#tamaños_consignas {
+    width: 100%;
+    max-width: 1100px; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 42px 54px;
+}
+
+#tamaños_consignas article {
+    padding: 0 42px 34px;
+    border: 2px solid #111111;
+    border-radius: 34px;
+    background: #ffffff;
+    overflow: hidden; 
+}
+
+#tamaños_consignas article h5 {
+    margin: 0 -42px 34px; 
+    padding: 22px 0 18px;
+    background: #ff7748;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 1;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#tamaños_consignas article h6 {
+    margin: 0 auto 28px;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px; 
+    line-height: 1;
+}
+
+#tamaños_consignas article p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    margin: 0;
+    border-top: 1px solid #111111; 
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+#tamaños_consignas article p i {
+    font-size: 18px;
+    width: 20px;
+    text-align: center;
+}
+
+#tamaños_consignas article .sin_borde {
+    border-top: none;
+}
+
+#tamaños_consignas article button {
+    width: 220px;
+    margin: 26px auto 0;
+    display: block;
+    padding: 10px 30px;
+    background: #ff7748;
+    color: #ffffff;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+}
+
+#tamaños_consignas article button:hover {
+    background-color: #F69A49; 
+    color: white;
+    text-decoration: none;
+}

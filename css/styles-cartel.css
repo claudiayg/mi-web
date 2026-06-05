@@ -1,0 +1,136 @@
+#cartel {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 0;
+}
+
+#cartel h1,
+#hero,
+#artistas_confirmados,
+#encuesta_artistas {
+    grid-column: 1 / 13;
+}
+
+#cartel h1 {
+    width: 500px;
+    padding: 26px 0 26px 0;
+}
+
+#artistas_confirmados {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 100px 95px 95px;
+}
+
+#artistas_confirmados h2 {
+    margin-bottom: 70px;
+    line-height: 0.9;
+}
+
+#tarjetas_artistas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    justify-content: center;
+    gap: 50px 80px;
+}
+
+#tarjetas_artistas article {
+    border: 2px solid #000000;
+    border-radius: 38px;
+    overflow: hidden;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.664);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#tarjetas_artistas article:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4); 
+}
+
+#tarjetas_artistas article img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background: #ffffff;
+    border-bottom: 2px solid #000000;
+}
+
+#tarjetas_artistas article h3 {
+    padding: 16px 14px 22px;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 1;
+    text-shadow: -1px -1px 0 #111111, 1px -1px 0 #111111, -1px 1px 0 #111111, 1px 1px 0 #111111;
+}
+
+#artistas_redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    padding: 0 0 20px;
+}
+
+#artistas_redes i {
+    color: #ffffff;
+    font-size: 34px;
+}
+
+.tarjeta_rosa {
+    background: #ea96b4;
+}
+
+.tarjeta_verde {
+    background: #56c3b7;
+}
+
+.tarjeta_naranja {
+    background: #ff7748;
+}
+
+#encuesta_artistas {
+    padding: 60px 120px;
+    border-top: 4px solid #111111;
+    border-bottom: 4px solid #111111;
+    background-color: #ff7748;
+    background-image: url("../images/asterisco.svg"), url("../images/asterisco.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 240px 240px, 240px 240px;
+    background-position: 0 center, 100% center;
+    text-align: center;
+    width: 100vw;
+}
+
+#encuesta_artistas h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    line-height: 1;
+}
+
+#encuesta_artistas p {
+    width: 900px;
+    margin: 0 auto 26px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+#encuesta_artistas button {
+    min-width: 360px;
+    padding: 14px 34px;
+    background: #ffffff;
+    color: #ff7748;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+}
+
+#encuesta_artistas button:hover {
+    transform: scale(1.05); 
+}
